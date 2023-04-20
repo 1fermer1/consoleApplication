@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class SaveCommand {
+public class SaveCommand implements ICommandable {
 }

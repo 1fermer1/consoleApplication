@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class RemoveByIdCommand {
+public class RemoveByIdCommand implements ICommandable {
 }

@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class CountLessThanDistanceCommand {
+public class CountLessThanDistanceCommand implements ICommandable {
 }

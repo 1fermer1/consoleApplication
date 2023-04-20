@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class PrintDescendingCommand {
+public class PrintDescendingCommand implements ICommandable {
 }

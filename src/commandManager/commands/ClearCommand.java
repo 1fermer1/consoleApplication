@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class ClearCommand {
+public class ClearCommand implements ICommandable {
 }

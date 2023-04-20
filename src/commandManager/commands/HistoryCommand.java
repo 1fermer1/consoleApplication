@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class HistoryCommand {
+public class HistoryCommand implements ICommandable {
 }

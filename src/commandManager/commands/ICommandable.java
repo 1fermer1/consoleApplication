@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public interface Command {
+public interface ICommandable {
 }

@@ -1,4 +1,4 @@
 package commandManager.commands;
 
-public class HelpCommand {
+public class HelpCommand implements ICommandable {
 }
