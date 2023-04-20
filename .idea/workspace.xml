@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd057ad-7e39-4591-8b57-561877e254df" name="Changes" comment="1-st commit">
-      <change afterPath="$PROJECT_DIR$/src/commandManager/CommandExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commandManager/commands/AddCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commandManager/commands/Command.java" afterDir="false" />
+    <list default="true" id="9dd057ad-7e39-4591-8b57-561877e254df" name="Changes" comment="2-nd commit">
+      <change afterPath="$PROJECT_DIR$/src/commandManager/commands/ExitCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681992485424</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2-nd commit">
+      <created>1681992835410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681992835410</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2-nd commit">
+      <created>1681992839441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681992839441</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,7 +105,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1-st commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1-st commit" />
+    <MESSAGE value="2-nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-nd commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
