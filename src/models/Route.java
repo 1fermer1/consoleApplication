@@ -6,7 +6,7 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Route {
+public class Route implements Comparable<Route> {
     private int id; // Значение поля должно быть больше 0, Значение этого поля должно быть уникальным,
                     // Значение этого поля должно генерироваться автоматически
     private String name; // Поле не может быть null, Строка не может быть пустой
@@ -104,5 +104,8 @@ public class Route {
                 + ",\n\tcreationDate: " + creationDate.toLocalDate() + ",\n\tfrom: " + from + ",\n\tto: " + to
                 + ",\n\tdistance: " + distance + "\n\t}";
     }
-    // TODO: @Override CompareTo
+    @Override
+    public int compareTo(Route r) {
+        return this.getName().compareTo(r.getName());
+    }
 }
