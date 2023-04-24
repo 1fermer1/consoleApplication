@@ -1,0 +1,27 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceSets.main.java.srcDirs = ['src']
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainClass = 'main.Main'
+}
+
+run {
+    standardInput = System.in
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'main.Main'
+        )
+    }
+}

@@ -1,6 +1,10 @@
 package models;
 
+import models.handlers.RoutesCollectionHandler;
+
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Route {
     private int id; // Значение поля должно быть больше 0, Значение этого поля должно быть уникальным,
@@ -14,7 +18,28 @@ public class Route {
 
 
 
-    public int getId() {
+    private Random rnd = new Random();
+    private ArrayList<Route> routesArray = new RoutesCollectionHandler().getRoutesCollection();
+    private ArrayList<Integer> idArray = new ArrayList<Integer>();
+    public Route() {
+        id = rnd.nextInt();
+        id = id < 0 ? -id : id + 1;
+        for (Route r : routesArray) {
+            idArray.add(r.getId());
+        }
+        while (idArray.contains(id)) {
+            id = rnd.nextInt();
+            id = id < 0 ? -id : id + 1;
+        }
+
+        creationDate = ZonedDateTime.now();
+    }
+
+    static {
+        RoutesCollectionHandler.collectionInitializationDate = ZonedDateTime.now();
+    }
+
+    public Integer getId() {
         return id;
     }
     public String getName() {
