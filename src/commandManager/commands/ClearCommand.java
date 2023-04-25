@@ -1,5 +1,11 @@
 package commandManager.commands;
 
+import exceptions.WrongAmountOfArgumentsException;
+import models.Route;
+import models.handlers.RoutesCollectionHandler;
+
+import java.util.ArrayList;
+
 public class ClearCommand implements ICommandable {
     @Override
     public String getName() {
@@ -12,7 +18,11 @@ public class ClearCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) {
-
+    public void execute(String[] args) throws WrongAmountOfArgumentsException {
+        if (args.length == 0) {
+            new RoutesCollectionHandler().setRoutesCollection(new ArrayList<Route>());
+        } else {
+            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
+        }
     }
 }

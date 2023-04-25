@@ -1,8 +1,7 @@
 package commandManager.commands;
 
 import commandManager.CommandManager;
-
-import java.util.LinkedHashMap;
+import exceptions.WrongAmountOfArgumentsException;
 
 public class HelpCommand implements ICommandable {
     @Override
@@ -16,12 +15,12 @@ public class HelpCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) {
+    public void execute(String[] args) throws WrongAmountOfArgumentsException {
         CommandManager cm = new CommandManager();
         if (args.length == 0) {
             cm.getCommands().forEach((name, command) -> System.out.println(name + " " + command.getArgs() + " -- " + command.getDescription()));
         } else {
-            // TODO: сделать аргумент ексепшен (чтобы команда не попала в историю)
+            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
         }
     }
 }

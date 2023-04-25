@@ -1,5 +1,7 @@
 package commandManager.commands;
 
+import exceptions.WrongAmountOfArgumentsException;
+
 public class HistoryCommand implements ICommandable {
     @Override
     public String getName() {
@@ -12,8 +14,21 @@ public class HistoryCommand implements ICommandable {
     }
 
     //@Override
-    public void execute(String args[]) {
-
+    public void execute(String args[]) throws WrongAmountOfArgumentsException {
+        if (args.length == 0) {
+            if (historyArray[0].equals("")) {
+                System.out.println("Истории команд нет");
+                return;
+            }
+            for (String c : historyArray) {
+                if (c.equals("")) {
+                    break;
+                }
+                System.out.println("> " + c);
+            }
+        } else {
+            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
+        }
     }
 
     public void pushLastCommand(String commandName) {

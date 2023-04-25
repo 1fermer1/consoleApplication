@@ -1,5 +1,7 @@
 package commandManager.commands;
 
+import exceptions.WrongAmountOfArgumentsException;
+
 public class UpdateCommand implements ICommandable {
     @Override
     public String getName() {
@@ -17,7 +19,11 @@ public class UpdateCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) {
+    public void execute(String[] args) throws Exception {
+        if (args.length == 1) {
 
+        } else {
+            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " приниамет только один аргумент");
+        }
     }
 }

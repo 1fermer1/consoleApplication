@@ -1,5 +1,10 @@
 package commandManager.commands;
 
+import exceptions.IncorrectArgumentException;
+import exceptions.WrongAmountOfArgumentsException;
+import models.Route;
+import models.Validator;
+
 public class AddCommand implements ICommandable {
     @Override
     public String getName() {
@@ -17,7 +22,11 @@ public class AddCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) {
+    public void execute(String[] args) throws Exception {
+        if (args.length == 0) {
 
+        } else {
+            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
+        }
     }
 }

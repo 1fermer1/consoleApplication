@@ -36,7 +36,7 @@ public class Route implements Comparable<Route> {
     }
 
     static {
-        RoutesCollectionHandler.collectionInitializationDate = ZonedDateTime.now();
+        new RoutesCollectionHandler().setCollectionInitializationDate();
     }
 
     public Integer getId() {
