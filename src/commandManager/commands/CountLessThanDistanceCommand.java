@@ -3,8 +3,8 @@ package commandManager.commands;
 import exceptions.IncorrectArgumentException;
 import exceptions.WrongAmountOfArgumentsException;
 import models.Route;
-import models.Validator;
 import models.handlers.RoutesCollectionHandler;
+import models.validators.DistanceValidator;
 
 import java.util.ArrayList;
 
@@ -24,13 +24,14 @@ public class CountLessThanDistanceCommand implements ICommandable {
         return "distance";
     }
 
+    DistanceValidator dv = new DistanceValidator();
     int count = 0;
     int distance = 0;
     ArrayList<Route> routesCollection = new RoutesCollectionHandler().getRoutesCollection();
     @Override
     public void execute(String[] args) throws Exception {
         if (args.length == 1) {
-            if (Validator.validateDistance(args[0])) {
+            if (dv.validate(args[0])) {
                 distance = Integer.parseInt(args[0]);
                 for (Route r : routesCollection) {
                     if (r.getDistance() < distance) {

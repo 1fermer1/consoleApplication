@@ -20,19 +20,27 @@ public class Route implements Comparable<Route> {
 
     private Random rnd = new Random();
     private ArrayList<Route> routesArray = new RoutesCollectionHandler().getRoutesCollection();
-    private ArrayList<Integer> idArray = new ArrayList<Integer>();
+    private ArrayList<Integer> idArray = new RoutesCollectionHandler().getIdRoutesCollection();
     public Route() {
         id = rnd.nextInt();
         id = id < 0 ? -id : id + 1;
-        for (Route r : routesArray) {
-            idArray.add(r.getId());
-        }
         while (idArray.contains(id)) {
             id = rnd.nextInt();
             id = id < 0 ? -id : id + 1;
         }
 
         creationDate = ZonedDateTime.now();
+    }
+
+    public Route(String name, long coordinatesX, Integer coordinatesY, String locationFromName,
+                 Double locationFromX, Double locationFromY, String locationToName, Double locationToX,
+                 Double locationToY, int distance) {
+        this();
+        this.name = name;
+        this.coordinates = new Coordinates(coordinatesX, coordinatesY);
+        this.from = new Location(locationFromName, locationFromX, locationFromY);
+        this.to = new Location(locationToName, locationToX, locationToY);
+        this.distance = distance;
     }
 
     static {

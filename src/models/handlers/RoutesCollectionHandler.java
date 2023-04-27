@@ -24,6 +24,12 @@ public class RoutesCollectionHandler {
     public void setRouteToCollection(Route route) {
         routesCollection.add(route);
     }
+    public void changeRouteInCollection(int index, Route route) {
+        routesCollection.set(index, route);
+    }
+    public void setRouteToCollection(int index, Route route) {
+        routesCollection.add(index, route);
+    }
     public void setIdToIdRoutesCollection(Integer id) {
         idRoutesCollection.add(id);
     }

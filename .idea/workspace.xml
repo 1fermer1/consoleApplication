@@ -4,35 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd057ad-7e39-4591-8b57-561877e254df" name="Changes" comment="4-th commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/BuildObjectException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/CommandInterruptedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/IncorrectArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/StreamInterruptedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/UnknownCommandException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/WrongAmountOfArgumentsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Validator.java" afterDir="false" />
+    <list default="true" id="9dd057ad-7e39-4591-8b57-561877e254df" name="Changes" comment="5-th commit">
+      <change afterPath="$PROJECT_DIR$/src/exceptions/CommandInterrupterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/CoordinatesXValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/CoordinatesYValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/CreationDateValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/DistanceValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/IValidatorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/IdValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/LocationXValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/LocationYValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validators/NameValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/AddCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ClearCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/CountLessThanDistanceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/CountLessThanDistanceCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ExecuteScriptCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/HistoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/HistoryCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ICommandable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ICommandable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/InfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/PrintAscendingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/PrintAscendingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/PrintDescendingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/PrintDescendingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ReorderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ReorderCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/SaveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/InsertAtCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/InsertAtCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/RemoveByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/RemoveByIdCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ShowCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/UpdateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/UpdateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/CommandInterruptedException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Utilites.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Validator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/handlers/RoutesCollectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/handlers/RoutesCollectionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/validators/CoordinatesValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/validators/LocationValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/validators/RouteValidator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,26 +115,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hp/OneDrive - ITMO UNIVERSITY/consoleApplication&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Hp/OneDrive - ITMO UNIVERSITY/Новая папка/lab_5-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
-}</component>
-  <component name="RunManager" selected="Gradle.consoleApplication [run]">
+}]]></component>
+  <component name="RunManager" selected="Gradle.consoleApplication [jar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="consoleApplication" />
@@ -192,8 +199,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.consoleApplication [run]" />
         <item itemvalue="Gradle.consoleApplication [jar]" />
+        <item itemvalue="Gradle.consoleApplication [run]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -220,7 +227,12 @@
       <workItem from="1682356796171" duration="1199000" />
       <workItem from="1682409936993" duration="3900000" />
       <workItem from="1682421992472" duration="10363000" />
-      <workItem from="1682438926012" duration="465000" />
+      <workItem from="1682438926012" duration="797000" />
+      <workItem from="1682456142097" duration="21000" />
+      <workItem from="1682520467891" duration="655000" />
+      <workItem from="1682533652386" duration="135000" />
+      <workItem from="1682533800094" duration="11153000" />
+      <workItem from="1682573156575" duration="9415000" />
     </task>
     <task id="LOCAL-00001" summary="1-st commit">
       <created>1681992485424</created>
@@ -278,18 +290,37 @@
       <option name="project" value="LOCAL" />
       <updated>1682335960189</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="5-th commit">
+      <created>1682439591384</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682439591384</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1-st commit" />
     <MESSAGE value="2-nd commit" />
     <MESSAGE value="3-rd commit" />
     <MESSAGE value="4-th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="4-th commit" />
+    <MESSAGE value="5-th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="5-th commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

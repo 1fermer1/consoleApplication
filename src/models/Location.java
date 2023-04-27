@@ -7,6 +7,12 @@ public class Location {
 
 
 
+    public Location(String name, Double x, Double y) {
+        this.name = name;
+        this.x = x;
+        this.y = y;
+    }
+
     public Double getX() {
         return x;
     }

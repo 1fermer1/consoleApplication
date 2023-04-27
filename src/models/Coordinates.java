@@ -6,6 +6,11 @@ public class Coordinates {
 
 
 
+    public Coordinates(long x, Integer y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public long getX() {
         return x;
     }

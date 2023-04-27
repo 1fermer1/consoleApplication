@@ -2,6 +2,8 @@ package commandManager.commands;
 
 import exceptions.WrongAmountOfArgumentsException;
 
+import java.util.Arrays;
+
 public class HistoryCommand implements ICommandable {
     @Override
     public String getName() {
@@ -13,7 +15,7 @@ public class HistoryCommand implements ICommandable {
         return "вывести последние 5 команд (без их аргументов)";
     }
 
-    //@Override
+    @Override
     public void execute(String args[]) throws WrongAmountOfArgumentsException {
         if (args.length == 0) {
             if (historyArray[0].equals("")) {

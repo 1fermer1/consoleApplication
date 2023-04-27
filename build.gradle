@@ -1,6 +1,33 @@
-apply plugin: 'idea'
+//apply plugin: 'idea'
+//apply plugin: 'java'
+//apply plugin: 'application'
+
 apply plugin: 'java'
-apply plugin: 'application'
+apply plugin: 'eclipse'
+archivesBaseName = 'consoleApplication'
+version = ''
+sourceSets.main.java.srcDirs = ['src']
+
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    duplicatesStrategy=DuplicatesStrategy.INCLUDE
+    manifest {
+        attributes "Main-Class": "main.Main"
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    implementation('com.google.code.gson:gson:2.8.2')
+    implementation('org.jetbrains:annotations:23.0.0')
+}
+
 
 sourceSets.main.java.srcDirs = ['src']
 
@@ -10,18 +37,3 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-application {
-    mainClass = 'main.Main'
-}
-
-run {
-    standardInput = System.in
-}
-
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'main.Main'
-        )
-    }
-}
