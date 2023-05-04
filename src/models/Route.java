@@ -2,11 +2,12 @@ package models;
 
 import models.handlers.RoutesCollectionHandler;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Route implements Comparable<Route> {
+public class Route implements Comparable<Route>, Serializable {
     private int id; // Значение поля должно быть больше 0, Значение этого поля должно быть уникальным,
                     // Значение этого поля должно генерироваться автоматически
     private String name; // Поле не может быть null, Строка не может быть пустой
@@ -19,8 +20,18 @@ public class Route implements Comparable<Route> {
 
 
     private Random rnd = new Random();
-    private ArrayList<Route> routesArray = new RoutesCollectionHandler().getRoutesCollection();
     private ArrayList<Integer> idArray = new RoutesCollectionHandler().getIdRoutesCollection();
+
+    public Route(int id, String name, Coordinates coordinates, ZonedDateTime creationDate, Location from, Location to, int distance) {
+        this.id = id;
+        this.name = name;
+        this.coordinates = coordinates;
+        this.creationDate = creationDate;
+        this.from = from;
+        this.to = to;
+        this.distance = distance;
+    }
+
     public Route() {
         id = rnd.nextInt();
         id = id < 0 ? -id : id + 1;
@@ -41,10 +52,6 @@ public class Route implements Comparable<Route> {
         this.from = new Location(locationFromName, locationFromX, locationFromY);
         this.to = new Location(locationToName, locationToX, locationToY);
         this.distance = distance;
-    }
-
-    static {
-        new RoutesCollectionHandler().setCollectionInitializationDate();
     }
 
     public Integer getId() {
@@ -108,9 +115,9 @@ public class Route implements Comparable<Route> {
     }
     @Override
     public String toString() {
-        return "Route: {\n\tid: " + id + ",\n\tname: " + name + ",\n\tcoordinates: " + coordinates
-                + ",\n\tcreationDate: " + creationDate.toLocalDate() + ",\n\tfrom: " + from + ",\n\tto: " + to
-                + ",\n\tdistance: " + distance + "\n\t}";
+        return "\tid: " + id + ",\n\tname: " + name + ",\n\tcoordinates: " + coordinates
+                + "\n\tcreationDate: " + creationDate.toLocalDate() + "\n\tfrom: " + from + "\n\tto: " + to
+                + "\n\tdistance: " + distance + "\n\t";
     }
     @Override
     public int compareTo(Route r) {

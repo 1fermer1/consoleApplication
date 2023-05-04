@@ -1,6 +1,8 @@
 package models;
 
-public class Coordinates {
+import java.io.Serializable;
+
+public class Coordinates implements Serializable {
     private long x;
     private Integer y; // Значение поля должно быть больше -807, Поле не может быть null
 
@@ -9,6 +11,10 @@ public class Coordinates {
     public Coordinates(long x, Integer y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Coordinates() {
+
     }
 
     public long getX() {
@@ -39,6 +45,6 @@ public class Coordinates {
     }
     @Override
     public String toString() {
-        return "Coordinates: {\n\t\tx: " + x + ",\n\t\ty: " + y + "\n\t\t}";
+        return "\n\t\tx: " + x + ",\n\t\ty: " + y;
     }
 }

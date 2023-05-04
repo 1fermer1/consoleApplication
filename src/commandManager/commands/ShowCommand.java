@@ -27,7 +27,7 @@ public class ShowCommand implements ICommandable {
             }
             System.out.print(routesCollection.get(0));
             for (int i = 1; i < routesCollection.size(); i++) {
-                System.out.print(",\n" + routesCollection.get(i));
+                System.out.print("\n\n" + routesCollection.get(i));
             }
         } else {
             throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");

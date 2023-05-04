@@ -1,6 +1,8 @@
 package models;
 
-public class Location {
+import java.io.Serializable;
+
+public class Location implements Serializable {
     private Double x; // Поле не может быть null
     private Double y; // Поле не может быть null
     private String name; // Строка не может быть пустой, Поле может быть null
@@ -11,6 +13,10 @@ public class Location {
         this.name = name;
         this.x = x;
         this.y = y;
+    }
+
+    public Location() {
+
     }
 
     public Double getX() {
@@ -29,7 +35,7 @@ public class Location {
     public void setY(Double y) {
         this.y = y;
     }
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -47,6 +53,6 @@ public class Location {
     }
     @Override
     public String toString() {
-        return "Location: {\n\t\tname: " + name + ",\n\t\tx: " + x + ",\n\t\ty: " + y + "\n\t\t}";
+        return "\n\t\tname: " + name + ",\n\t\tx: " + x + ",\n\t\ty: " + y;
     }
 }
