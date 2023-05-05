@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc9a95c-c23d-4cd6-bf00-e1e24e16349b" name="Changes" comment="lastOne">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/routes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ExecuteScriptCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/HistoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/HistoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/InfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileLogic/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileLogic/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/LauncherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LauncherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Отчет.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Route.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +212,7 @@
       <workItem from="1683263945844" duration="241000" />
       <workItem from="1683277533345" duration="1278000" />
       <workItem from="1683279458172" duration="3025000" />
+      <workItem from="1683282850283" duration="1158000" />
     </task>
     <task id="LOCAL-00001" summary="shit">
       <created>1683233974633</created>
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683255482515</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lastOne">
+      <created>1683283033200</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683283033200</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

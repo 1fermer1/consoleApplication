@@ -117,7 +117,7 @@ public class Route implements Comparable<Route>, Serializable {
     public String toString() {
         return "\tid: " + id + ",\n\tname: " + name + ",\n\tcoordinates: " + coordinates
                 + "\n\tcreationDate: " + creationDate.toLocalDate() + "\n\tfrom: " + from + "\n\tto: " + to
-                + "\n\tdistance: " + distance + "\n\t";
+                + "\n\tdistance: " + distance + "\n";
     }
     @Override
     public int compareTo(Route r) {
