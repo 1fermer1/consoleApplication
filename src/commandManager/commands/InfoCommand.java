@@ -20,7 +20,7 @@ public class InfoCommand implements ICommandable {
     RoutesCollectionHandler rch = new RoutesCollectionHandler();
     @Override
     public void execute(String args) throws WrongAmountOfArgumentsException {
-        System.out.println("Информация о коллекции:\n\tТип коллекции: " + rch.getClass().getName());
+        System.out.println("Nнформация о коллекции:\n\tТип коллекции: " + rch.getClass().getName());
         if (rch.getCollectionInitializationDate() == null) {
             System.out.println("\tКоллекция не инициализирована\n\tКоллекция пуста. Содержит 0 элементов");
         } else {

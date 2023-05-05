@@ -20,17 +20,6 @@
 		"distance": 900
 	},
 	{
-		"id": 111131111,
-		"name": "route-my-route 2222",
-		"creationDate": "2022-11-11T23:11:11.111111+03:00[Europe/Moscow]",
-		"to": {
-			"x": 3.0E300,
-			"y": 777.0,
-			"name": "location-to-home"
-		},
-		"distance": 900
-	},
-	{
 		"id": 112111111,
 		"name": "route-my-route 3333",
 		"coordinates": {

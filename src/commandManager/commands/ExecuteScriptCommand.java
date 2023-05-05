@@ -5,8 +5,15 @@ import main.LauncherService;
 import main.Mode;
 import main.UserInputService;
 
+import java.io.File;
+
 public class ExecuteScriptCommand implements ICommandable {
     private static Integer iter = 0;
+
+    public static void setIter(Integer iter) {
+        ExecuteScriptCommand.iter = iter;
+    }
+
     @Override
     public String getName() {
         return "execute_script";
@@ -24,8 +31,10 @@ public class ExecuteScriptCommand implements ICommandable {
 
     @Override
     public void execute(String args) throws Exception {
+        UserInputService.setScriptFile(new File(args));
         if (iter>200) {
             UserInputService.setMode(Mode.DEFAULT);
+            iter = 0;
             return;
         }
         iter++;

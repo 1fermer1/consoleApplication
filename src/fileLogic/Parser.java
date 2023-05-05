@@ -5,6 +5,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import models.Route;
 import models.handlers.RoutesCollectionHandler;
+import models.validators.*;
 
 import java.io.*;
 import java.time.ZonedDateTime;
@@ -39,13 +40,22 @@ import java.util.Random;
                     while (reader.hasNext()) {
                         JsonObject obj = JsonParser.parseReader(reader).getAsJsonObject();
                         Route route = gson.fromJson(obj, Route.class);
-                        //if () {
+                        if (new NameValidator().validate(route.getName()) &&
+                                new IdValidator().validate(route.getId().toString()) &&
+                                new CreationDateValidator().validate(route.getCreationDate().toString()) &&
+                                new CoordinatesYValidator().validate(route.getCoordinates().getY().toString()) &&
+                                (route.getFrom() == null || !route.getFrom().getName().equals("") &&
+                                        new LocationXValidator().validate(route.getFrom().getX().toString()) &&
+                                        new LocationYValidator().validate(route.getFrom().getX().toString())) &&
+                                (route.getTo() == null || !route.getTo().getName().equals("") &&
+                                        new LocationXValidator().validate(route.getTo().getX().toString()) &&
+                                        new LocationYValidator().validate(route.getTo().getX().toString())) &&
+                                new DistanceValidator().validate(Integer.toString(route.getDistance()))) {
                             routeList.add(route);
                             System.out.println(route);
-//                        } else {
-//                            System.out.println("Incorrect object input");
-//                        }
-                        //Todo: if if if
+                        } else {
+                            System.out.println("Incorrect object input");
+                        }
                     }
                     reader.endArray();
                     System.out.println("Import successful");

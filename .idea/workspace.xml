@@ -4,39 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dc9a95c-c23d-4cd6-bf00-e1e24e16349b" name="Changes" comment="shit">
-      <change afterPath="$PROJECT_DIR$/script.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileLogic/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileLogic/RandomAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileLogic/ZonedDateTimeAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/LauncherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/UserInputService.java" afterDir="false" />
+    <list default="true" id="1dc9a95c-c23d-4cd6-bf00-e1e24e16349b" name="Changes" comment="lastOne">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/CommandExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/CommandMode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/CountLessThanDistanceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/CountLessThanDistanceCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/routes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ExecuteScriptCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/HelpCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/HistoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/HistoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ICommandable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ICommandable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commandManager/commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/InfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/InsertAtCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/InsertAtCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/PrintAscendingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/PrintAscendingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/PrintDescendingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/PrintDescendingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/RemoveByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/RemoveByIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ReorderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ReorderCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/SaveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/ShowCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandManager/commands/UpdateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandManager/commands/UpdateCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileLogic/JSONReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/handlers/RoutesCollectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/handlers/RoutesCollectionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/validators/IdValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/validators/IdValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileLogic/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileLogic/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/LauncherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LauncherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Location.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +48,12 @@
                 <item name="consoleApplication" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="consoleApplication" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -110,10 +93,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -181,9 +164,32 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="consoleApplication [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.consoleApplication [jar]" />
+        <item itemvalue="Gradle.consoleApplication [javadoc]" />
         <item itemvalue="Gradle.consoleApplication [build]" />
       </list>
     </recent_temporary>
@@ -204,6 +210,14 @@
       <workItem from="1683193463592" duration="12815000" />
       <workItem from="1683219026955" duration="17416000" />
       <workItem from="1683239430129" duration="13880000" />
+      <workItem from="1683255426506" duration="76000" />
+      <workItem from="1683255776564" duration="454000" />
+      <workItem from="1683258073806" duration="3558000" />
+      <workItem from="1683262106264" duration="75000" />
+      <workItem from="1683262271548" duration="941000" />
+      <workItem from="1683263945844" duration="241000" />
+      <workItem from="1683277533345" duration="1278000" />
+      <workItem from="1683279458172" duration="3025000" />
     </task>
     <task id="LOCAL-00001" summary="shit">
       <created>1683233974633</created>
@@ -212,7 +226,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683233974633</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lastOne">
+      <created>1683255445000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683255445000</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lastOne">
+      <created>1683255482515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683255482515</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,16 +248,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="shit" />
+    <MESSAGE value="lastOne" />
+    <option name="LAST_COMMIT_MESSAGE" value="lastOne" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/models/Route.java</url>
-          <line>17</line>
-          <properties field="to" class="models.Route" />
-          <option name="timeStamp" value="9" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fileLogic/Parser.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

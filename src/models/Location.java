@@ -25,7 +25,7 @@ public class Location implements Serializable {
     public Double getY() {
         return y;
     }
-    public String name() {
+    public String getName() {
         return name;
     }
 

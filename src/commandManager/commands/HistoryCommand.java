@@ -18,7 +18,7 @@ public class HistoryCommand implements ICommandable {
     @Override
     public void execute(String args) throws WrongAmountOfArgumentsException {
         if (historyArray[0].equals("")) {
-            System.out.println("Истории команд нет");
+            System.out.println("Nстории команд нет");
             return;
         }
         for (String c : historyArray) {

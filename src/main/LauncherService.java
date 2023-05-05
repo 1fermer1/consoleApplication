@@ -1,6 +1,7 @@
 package main;
 
 import commandManager.CommandManager;
+import commandManager.commands.ExecuteScriptCommand;
 import commandManager.commands.HistoryCommand;
 import commandManager.commands.ICommandable;
 import commandManager.commands.SaveCommand;
@@ -12,7 +13,7 @@ import java.util.LinkedHashMap;
 public class LauncherService {
     public static void init() {
         UserInputService.setMode(Mode.DEFAULT);
-        UserInputService.setScriptFile(new File("script.txt"));
+        //UserInputService.setScriptFile(new File("script.txt"));
         Arrays.fill(HistoryCommand.historyArray, "");
         System.out.println("welcome to los pollos hermanos");
         LauncherService.launcher();
@@ -21,13 +22,12 @@ public class LauncherService {
     public static void launcher() {
         while (true) {
             switch (UserInputService.getMode()) {
-                case DEFAULT -> {
+                case DEFAULT:
                     UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(System.in)));
                     while (true) {
                         defaultCommandExecute();
                     }
-                }
-                case FILE -> {
+                case FILE:
                     try {
                         UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(new FileInputStream(UserInputService.getScriptFile()))));
                         fileCommandExecute();
@@ -38,8 +38,10 @@ public class LauncherService {
                     } catch (FileNotFoundException e) {
                         System.out.println("Ошибка обработки файла. Проверьте, корректно ли указано имя файла, а также права доступа к нему");
                     }
-                }
-                default -> throw new IllegalStateException("Unexpected value: " + UserInputService.getMode());
+                    UserInputService.setMode(Mode.DEFAULT);
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + UserInputService.getMode());
             }
         }
     }
