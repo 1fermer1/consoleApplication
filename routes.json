@@ -1,0 +1,53 @@
+[
+	{
+		"id": 111111111,
+		"name": "route-my-route 1111",
+		"coordinates": {
+			"x": 200022000220002,
+			"y": 2000220002
+		},
+		"creationDate": "2022-11-11T23:11:11.111111+03:00[Europe/Moscow]",
+		"from": {
+			"x": 3.333333,
+			"y": 0.444444,
+			"name": "location-from-school"
+		},
+		"to": {
+			"x": 3.0E300,
+			"y": 777.0,
+			"name": "location-to-home"
+		},
+		"distance": 900
+	},
+	{
+		"id": 111131111,
+		"name": "route-my-route 2222",
+		"creationDate": "2022-11-11T23:11:11.111111+03:00[Europe/Moscow]",
+		"to": {
+			"x": 3.0E300,
+			"y": 777.0,
+			"name": "location-to-home"
+		},
+		"distance": 900
+	},
+	{
+		"id": 112111111,
+		"name": "route-my-route 3333",
+		"coordinates": {
+			"x": 200022000220002,
+			"y": 2000220002
+		},
+		"creationDate": "2022-11-11T23:11:11.111111+03:00[Europe/Moscow]",
+		"from": {
+			"x": 3.333333,
+			"y": 0.444444,
+			"name": "location-from-school"
+		},
+		"to": {
+			"x": 3.0E300,
+			"y": 777.0,
+			"name": "location-to-home"
+		},
+		"distance": 900
+	}
+]

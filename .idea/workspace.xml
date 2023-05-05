@@ -122,7 +122,7 @@
       <recent name="C:\Users\Hp\OneDrive - ITMO UNIVERSITY\consoleApplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.consoleApplication [jar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="consoleApplication.main" />
