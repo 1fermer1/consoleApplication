@@ -9,5 +9,5 @@ public interface ICommandable {
         return "";
     }
 
-    public void execute(String[] args) throws Exception;
+    public void execute(String args) throws Exception;
 }

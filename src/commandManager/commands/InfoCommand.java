@@ -19,17 +19,13 @@ public class InfoCommand implements ICommandable {
 
     RoutesCollectionHandler rch = new RoutesCollectionHandler();
     @Override
-    public void execute(String[] args) throws WrongAmountOfArgumentsException {
-        if (args.length == 0) {
-            System.out.println("Информация о коллекции:\n\tТип коллекции: " + rch.getClass().getName());
-            if (rch.getCollectionInitializationDate() == null) {
-                System.out.println("\tКоллекция не инициализирована\n\tКоллекция пуста. Содержит 0 элементов");
-            } else {
-                System.out.println("\tДата инициализации коллекции: " + rch.getCollectionInitializationDate().toLocalDate()
-                        + "\n\tКоличество эелементов в коллекции: " + rch.getRoutesCollection().size());
-            }
+    public void execute(String args) throws WrongAmountOfArgumentsException {
+        System.out.println("Информация о коллекции:\n\tТип коллекции: " + rch.getClass().getName());
+        if (rch.getCollectionInitializationDate() == null) {
+            System.out.println("\tКоллекция не инициализирована\n\tКоллекция пуста. Содержит 0 элементов");
         } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
+            System.out.println("\tДата инициализации коллекции: " + rch.getCollectionInitializationDate().toLocalDate()
+                    + "\n\tКоличество эелементов в коллекции: " + rch.getRoutesCollection().size());
         }
     }
 }

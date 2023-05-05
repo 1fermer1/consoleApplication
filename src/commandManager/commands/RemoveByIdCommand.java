@@ -6,6 +6,7 @@ import models.Route;
 import models.handlers.RoutesCollectionHandler;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class RemoveByIdCommand implements ICommandable {
     @Override
@@ -24,30 +25,26 @@ public class RemoveByIdCommand implements ICommandable {
     }
 
     RoutesCollectionHandler rch = new RoutesCollectionHandler();
-    ArrayList<Integer> idArrays = rch.getIdRoutesCollection();
+    HashSet<Integer> idArrays = rch.getIdRoutesCollection();
     ArrayList<Route> routesArrays = rch.getRoutesCollection();
     @Override
-    public void execute(String[] args) throws Exception {
-        if (args.length == 1) {
-            if (validateArg(args[0])) {
-                Integer id = Integer.parseInt(args[0]);
-                if (idArrays.remove(id)) {
-                    for (int i = 0; i < routesArrays.size(); i++) {
-                        if (routesArrays.get(i).getId() == id) {
-                            routesArrays.remove(i);
-                            rch.setIdRoutesCollection(idArrays);
-                            rch.setRoutesCollection(routesArrays);
-                            return;
-                        }
+    public void execute(String args) throws Exception {
+        if (validateArg(args)) {
+            Integer id = Integer.parseInt(args);
+            if (idArrays.remove(id)) {
+                for (int i = 0; i < routesArrays.size(); i++) {
+                    if (routesArrays.get(i).getId() == id) {
+                        routesArrays.remove(i);
+                        rch.setIdRoutesCollection(idArrays);
+                        rch.setRoutesCollection(routesArrays);
+                        return;
                     }
-                } else {
-                    System.out.println("Коллекция итак не содержит элемента с id " + id);
                 }
             } else {
-                throw new IncorrectArgumentException("Команда " + this.getName() + " принимает целое число больше 0");
+                System.out.println("Коллекция итак не содержит элемента с id " + id);
             }
         } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " приниамет только один аргумент");
+            throw new IncorrectArgumentException("Команда " + this.getName() + " принимает целое число больше 0");
         }
     }
     private boolean validateArg(String arg) {

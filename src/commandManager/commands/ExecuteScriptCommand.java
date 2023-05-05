@@ -1,8 +1,12 @@
 package commandManager.commands;
 
 import exceptions.WrongAmountOfArgumentsException;
+import main.LauncherService;
+import main.Mode;
+import main.UserInputService;
 
 public class ExecuteScriptCommand implements ICommandable {
+    private static Integer iter = 0;
     @Override
     public String getName() {
         return "execute_script";
@@ -19,13 +23,13 @@ public class ExecuteScriptCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) throws Exception {
-        if (args.length == 1) {
-// вставить в эдд енам с модом, если мод скрипта, а не юзера, то вместо повторных сообщений о вводе пробрасываем исключение
-
-            // сделать счетчик вызова скрипт команды и если доходит число до N (или например 500) то делаем вид что избавляемся от рекурсии и прекращаем скрипты
-        } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " приниамет только один аргумент");
+    public void execute(String args) throws Exception {
+        if (iter>200) {
+            UserInputService.setMode(Mode.DEFAULT);
+            return;
         }
+        iter++;
+        UserInputService.setMode(Mode.FILE);
+        LauncherService.launcher();
     }
 }

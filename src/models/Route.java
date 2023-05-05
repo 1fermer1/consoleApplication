@@ -5,6 +5,7 @@ import models.handlers.RoutesCollectionHandler;
 import java.io.Serializable;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Random;
 
 public class Route implements Comparable<Route>, Serializable {
@@ -19,9 +20,6 @@ public class Route implements Comparable<Route>, Serializable {
 
 
 
-    private Random rnd = new Random();
-    private ArrayList<Integer> idArray = new RoutesCollectionHandler().getIdRoutesCollection();
-
     public Route(int id, String name, Coordinates coordinates, ZonedDateTime creationDate, Location from, Location to, int distance) {
         this.id = id;
         this.name = name;
@@ -33,6 +31,8 @@ public class Route implements Comparable<Route>, Serializable {
     }
 
     public Route() {
+        Random rnd = new Random();
+        HashSet<Integer> idArray = new RoutesCollectionHandler().getIdRoutesCollection();
         id = rnd.nextInt();
         id = id < 0 ? -id : id + 1;
         while (idArray.contains(id)) {

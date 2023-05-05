@@ -16,20 +16,16 @@ public class HistoryCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String args[]) throws WrongAmountOfArgumentsException {
-        if (args.length == 0) {
-            if (historyArray[0].equals("")) {
-                System.out.println("Истории команд нет");
-                return;
+    public void execute(String args) throws WrongAmountOfArgumentsException {
+        if (historyArray[0].equals("")) {
+            System.out.println("Истории команд нет");
+            return;
+        }
+        for (String c : historyArray) {
+            if (c.equals("")) {
+                break;
             }
-            for (String c : historyArray) {
-                if (c.equals("")) {
-                    break;
-                }
-                System.out.println("> " + c);
-            }
-        } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
+            System.out.println("> " + c);
         }
     }
 

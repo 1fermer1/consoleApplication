@@ -14,11 +14,7 @@ public class ExitCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) throws WrongAmountOfArgumentsException {
-        if (args.length == 0) {
-            System.exit(0);
-        } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
-        }
+    public void execute(String args) throws WrongAmountOfArgumentsException {
+        System.exit(0);
     }
 }

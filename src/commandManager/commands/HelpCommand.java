@@ -15,12 +15,8 @@ public class HelpCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) throws WrongAmountOfArgumentsException {
+    public void execute(String args) throws WrongAmountOfArgumentsException {
         CommandManager cm = new CommandManager();
-        if (args.length == 0) {
-            cm.getCommands().forEach((name, command) -> System.out.println(name + " " + command.getArgs() + " -- " + command.getDescription()));
-        } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
-        }
+        cm.getCommands().forEach((name, command) -> System.out.println(name + " " + command.getArgs() + " -- " + command.getDescription()));
     }
 }

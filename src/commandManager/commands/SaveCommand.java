@@ -1,6 +1,8 @@
 package commandManager.commands;
 
 import exceptions.WrongAmountOfArgumentsException;
+import fileLogic.Parser;
+import models.handlers.RoutesCollectionHandler;
 
 public class SaveCommand implements ICommandable {
     @Override
@@ -14,11 +16,7 @@ public class SaveCommand implements ICommandable {
     }
 
     @Override
-    public void execute(String[] args) throws Exception {
-        if (args.length == 0) {
-
-        } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
-        }
+    public void execute(String args) {
+        Parser.write(RoutesCollectionHandler.getRoutesCollection());
     }
 }

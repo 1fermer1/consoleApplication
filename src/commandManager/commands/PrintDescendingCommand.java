@@ -22,19 +22,15 @@ public class PrintDescendingCommand implements ICommandable {
     TreeSet<Route> descendingRoutesCollection = new TreeSet<Route>(new DescendingComparator());
     ArrayList<Route> routesCollection = new RoutesCollectionHandler().getRoutesCollection();
     @Override
-    public void execute(String[] args) throws WrongAmountOfArgumentsException {
-        if (args.length == 0) {
-            descendingRoutesCollection.addAll(routesCollection);
-            if (descendingRoutesCollection.size() == 0) {
-                System.out.println("В коллекции нет элементов");
-                return;
-            }
-            System.out.println(descendingRoutesCollection.pollFirst());
-            for (int i = 1; i < descendingRoutesCollection.size(); i++) {
-                System.out.println(",\n" + descendingRoutesCollection.pollFirst());
-            }
-        } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " не принимает аргументы");
+    public void execute(String args) throws WrongAmountOfArgumentsException {
+        descendingRoutesCollection.addAll(routesCollection);
+        if (descendingRoutesCollection.size() == 0) {
+            System.out.println("В коллекции нет элементов");
+            return;
+        }
+        System.out.println(descendingRoutesCollection.pollFirst());
+        for (int i = 1; i < descendingRoutesCollection.size(); i++) {
+            System.out.println(",\n" + descendingRoutesCollection.pollFirst());
         }
     }
 }

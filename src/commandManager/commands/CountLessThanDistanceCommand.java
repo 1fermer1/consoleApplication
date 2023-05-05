@@ -29,21 +29,17 @@ public class CountLessThanDistanceCommand implements ICommandable {
     int distance = 0;
     ArrayList<Route> routesCollection = new RoutesCollectionHandler().getRoutesCollection();
     @Override
-    public void execute(String[] args) throws Exception {
-        if (args.length == 1) {
-            if (dv.validate(args[0])) {
-                distance = Integer.parseInt(args[0]);
-                for (Route r : routesCollection) {
-                    if (r.getDistance() < distance) {
-                        count++;
-                    }
+    public void execute(String args) throws Exception {
+        if (dv.validate(args)) {
+            distance = Integer.parseInt(args);
+            for (Route r : routesCollection) {
+                if (r.getDistance() < distance) {
+                    count++;
                 }
-                System.out.println("Количество элементов, значение поля distance которых меньше чем " + distance + " равно " + count);
-            } else {
-                throw new IncorrectArgumentException("Команда " + this.getName() + " принимает целое число больше 1");
             }
+            System.out.println("Количество элементов, значение поля distance которых меньше чем " + distance + " равно " + count);
         } else {
-            throw new WrongAmountOfArgumentsException("Команда " + this.getName() + " приниамет только один аргумент");
+            throw new IncorrectArgumentException("Команда " + this.getName() + " принимает целое число больше 1");
         }
     }
 }
