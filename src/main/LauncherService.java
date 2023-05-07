@@ -31,6 +31,7 @@ public class LauncherService {
                     try {
                         UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(new FileInputStream(UserInputService.getScriptFile()))));
                         fileCommandExecute();
+                        System.out.println("скрипт сработал!");
                         if (!UserInputService.getScriptFile().exists() || !UserInputService.getScriptFile().isFile() || !UserInputService.getScriptFile().canRead()) {
                             System.out.println("File error");
                             return;
@@ -51,7 +52,10 @@ public class LauncherService {
         String[] splitCommand;
         try {
             command = "";
-            while ((command = UserInputService.getBufferedReader().readLine()) != null && command.length() != 0) {
+            while ((command = UserInputService.getBufferedReader().readLine()) != null) {
+                if (command.length() == 0) {
+                    continue;
+                }
                 splitCommand = command.split(" ");
                 if (splitCommand.length == 1) {
                     commands.get(splitCommand[0]).execute("");

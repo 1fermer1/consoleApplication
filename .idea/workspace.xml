@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1dc9a95c-c23d-4cd6-bf00-e1e24e16349b" name="Changes" comment="lastOne">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Отчет.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileLogic/JSONWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileLogic/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileLogic/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/LauncherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LauncherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +216,8 @@
       <workItem from="1683263945844" duration="241000" />
       <workItem from="1683277533345" duration="1278000" />
       <workItem from="1683279458172" duration="3025000" />
-      <workItem from="1683282850283" duration="1158000" />
+      <workItem from="1683282850283" duration="8748000" />
+      <workItem from="1683366673127" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="shit">
       <created>1683233974633</created>
@@ -242,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683283033200</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lastOne">
+      <created>1683284302139</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683284302139</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,17 +264,6 @@
     <MESSAGE value="shit" />
     <MESSAGE value="lastOne" />
     <option name="LAST_COMMIT_MESSAGE" value="lastOne" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/fileLogic/Parser.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
